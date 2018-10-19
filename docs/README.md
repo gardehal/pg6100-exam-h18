@@ -1,15 +1,15 @@
 
 # pg6100-exam-h18
 
-​[ Assignment ](PG6100%20Enterpriseprogrammering%202%20OPPGAVE%2019.10.18%20kl%2009.pdf)
+Exam repository for Enterprise2 ( <a href="https://github.com/arcuri82/testing_security_development_enterprise_systems">PG6100</a> ) Fall 2018 by:
 
-
-Exam repository for pg6100 (Enterprise2) Fall 2018 by 
 Margrethe Thorsen ( <a href="https://github.com/"></a> )
+
 Eirik Holmedal ( <a href="https://github.com/"></a> )
+
 Alexander T. Gärdehall ( <a href="https://github.com/grdall">grdall</a> )
 
-​
+<hr>
 
 [ api 1 documentation ](/api1/README.md)
 
