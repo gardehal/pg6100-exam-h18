@@ -1,6 +1,6 @@
 # pg6100-exam-h18
 
-[short intro]
+A group exam for RESTful APIs, Micro-services, and security in distributed systems with the topic "Cinemas".
 
 Course: <a href="https://github.com/arcuri82/testing_security_development_enterprise_systems">PG6100</a>
 
