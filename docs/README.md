@@ -11,13 +11,15 @@ Alexander T. Gärdehall ( <a href="https://github.com/grdall">grdall</a> )
 
 <hr>
 
-[ api 1 documentation ](/api1/README.md)
+[ User Authentication Documentation ](/UserAuth/README.md)
 
-[ api 2 documentation ](/api2/README.md)
+[ User Details Documentation ](/UserDetails/README.md)
 
-[ api 3 documentation ](/api3/README.md)
+[ Movies Documentation ](/Movies/README.md)
 
-[ common ](#common)
+[ Booking Documentation ](/UserDetails/README.md)
+
+[ common Doumentation ](#common)
 
 <a name="common"></a>
 ## common
