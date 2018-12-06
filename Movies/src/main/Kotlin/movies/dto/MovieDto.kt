@@ -6,7 +6,7 @@ import java.time.ZonedDateTime
 
 data class MovieDto(
         @ApiModelProperty("The id of the movie")
-        var id: String? = null,
+        var movieId: String? = null,
 
         @ApiModelProperty("The title of the movie")
         var title: String? = null,
