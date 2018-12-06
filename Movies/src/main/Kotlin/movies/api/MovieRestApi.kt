@@ -62,7 +62,7 @@ class MovieRestApi
     {
 
         val list = if(title.isNullOrBlank() && director.isNullOrBlank()
-                && category.isNullOrBlank()) //TODO screening?
+                && category.isNullOrBlank())
         {
             crud.findAll()
         }
@@ -142,7 +142,6 @@ class MovieRestApi
             return ResponseEntity.status(404).build()
         }
 
-        //FIXME ???
         val dto = crud.findById(id).orElse(null) ?: return ResponseEntity.status(404).build()
 
         return ResponseEntity.ok(MovieConverter.transform(dto))

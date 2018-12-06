@@ -1,5 +1,5 @@
 package movies
-/*
+
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.autoconfigure.domain.EntityScan
@@ -12,20 +12,19 @@ import springfox.documentation.spi.DocumentationType
 import springfox.documentation.spring.web.plugins.Docket
 import springfox.documentation.swagger2.annotations.EnableSwagger2
 
-//TODO
 /**
- *
  * Created by arcuri82 on 06-Jul-17.
  */
 
-@SpringBootApplication(scanBasePackages = ["org.tsdes.advanced"])
-@EnableJpaRepositories(basePackages = ["org.tsdes.advanced"])
-@EntityScan(basePackages = ["org.tsdes.advanced"])
+@SpringBootApplication(scanBasePackages = ["movies"])
+@EnableJpaRepositories(basePackages = ["movies"])
+@EntityScan(basePackages = ["movies"])
 @EnableSwagger2
-class NewsRestApplication {
-
+class MovieApplication
+{
     @Bean
-    fun swaggerApi(): Docket {
+    fun swaggerApi(): Docket
+    {
         return Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
@@ -33,22 +32,22 @@ class NewsRestApplication {
                 .build()
     }
 
-    private fun apiInfo(): ApiInfo {
+    private fun apiInfo(): ApiInfo
+    {
         return ApiInfoBuilder()
-                .title("API for REST News")
-                .description("Some description")
-                .version("2.0.0") // Note the change in version
+                .title("API for Movies")
+                .description("")
+                .version("1.0.0")
                 .build()
     }
 }
 
 /*
     If you run this directly, you can then check the Swagger documentation at:
-
     http://localhost:8080/newsrest/api/swagger-ui.html
-
  */
-fun main(args: Array<String>) {
-    SpringApplication.run(NewsRestApplication::class.java, *args)
-}
-*/
+
+    fun main(args: Array<String>)
+    {
+        SpringApplication.run(NewsRestApplication::class.java, *args)
+    }

@@ -6,6 +6,12 @@
 
 [ References ](#References)
 
+TODO
+- tests?
+- frontend
+- synch with other apis
+- shared api
+
 <a name="Reflection"></a>
 ## Reflection
 
