@@ -1,4 +1,4 @@
-package  backend
+package backend
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -12,15 +12,14 @@ import springfox.documentation.spi.DocumentationType
 import springfox.documentation.spring.web.plugins.Docket
 import springfox.documentation.swagger2.annotations.EnableSwagger2
 
-
-@SpringBootApplication(scanBasePackages = ["src/main/backendn/backend"])
-@EnableJpaRepositories(basePackages = ["src/main/backendn/backend"])
-@EntityScan(basePackages = ["src/main/backendn/backend"])
+@SpringBootApplication(scanBasePackages = ["backend"])
+@EnableJpaRepositories(basePackages = ["backend"])
+@EntityScan(basePackages = ["backend"])
 @EnableSwagger2
- class UserApplication {
+open class UserApplication {
 
     @Bean
-     fun swaggerApi(): Docket {
+    open fun swaggerApi(): Docket {
         return Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
@@ -30,7 +29,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 
     private fun apiInfo(): ApiInfo {
         return ApiInfoBuilder()
-                .title("API for REST Users")
+                .title("API for REST User")
                 .description("Some description")
                 .version("2.0.0") // Note the change in version
                 .build()
@@ -40,7 +39,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 /*
     If you run this directly, you can then check the Swagger documentation at:
 
-    http://localhost:8080/newsrest/api/swagger-ui.html
+    http://localhost:8080/userrest/api/swagger-ui.html
 
  */
 fun main(args: Array<String>) {
