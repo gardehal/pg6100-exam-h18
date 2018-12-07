@@ -49,5 +49,5 @@ class MovieApplication
 
     fun main(args: Array<String>)
     {
-        SpringApplication.run(NewsRestApplication::class.java, *args)
+        SpringApplication.run(MovieApplication::class.java, *args)
     }

@@ -89,7 +89,8 @@ class MovieRestApi
             @ApiParam("Title, director, category, screeningFromTime, screeningToTime of movie")
             @RequestBody
             dto: MovieDto)
-            : ResponseEntity<Long> {
+            : ResponseEntity<Long>
+    {
 
         if (!dto.movieId.isNullOrEmpty())
         {
@@ -121,24 +122,21 @@ class MovieRestApi
         return ResponseEntity.status(201).body(id)
     }
 
-    /*
-        In the following, we changed the URL from "/news/id/{id}"  to "/news/{id}"
-     */
-
 
     @ApiOperation("Get a single movie specified by id")
     @GetMapping(path = ["/{id}"])
     fun getNews(@ApiParam(ID_PARAM)
                 @PathVariable("id")
                 pathId: String?)
-            : ResponseEntity<MovieDto> {
-
+            : ResponseEntity<MovieDto>
+    {
         val id: Long
         try
         {
             id = pathId!!.toLong()
         }
-        catch (e: Exception) {
+        catch (e: Exception)
+        {
             return ResponseEntity.status(404).build()
         }
 
@@ -267,7 +265,7 @@ class MovieRestApi
             return ResponseEntity.status(404).build()
         }
 
-        crud.delete(id)
+        crud.deleteById(id)
         return ResponseEntity.status(204).build()
     }
 

@@ -12,13 +12,14 @@
     </parent>
 
     <properties>
-        <version.kotlin>1.2.70</version.kotlin>
-        <version.springboot>2.0.3.RELEASE</version.springboot>
+        <version.jboss>3.1.0.Final</version.jboss>
+        <version.junit>4.12</version.junit>
+        <version.springboot>2.1.0.RELEASE</version.springboot>
         <version.springcloud>Finchley.SR1</version.springcloud>
         <version.springfox>2.9.2</version.springfox>
         <version.graphql-spring>4.2.0</version.graphql-spring>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
-        <kotlin.version>1.2.71</kotlin.version>
+        <kotlin.version>1.2.70</kotlin.version>
     </properties>
 
     <build>
@@ -54,12 +55,12 @@
                     <dependency>
                         <groupId>org.jetbrains.kotlin</groupId>
                         <artifactId>kotlin-maven-allopen</artifactId>
-                        <version>${version.kotlin}</version>
+                        <version>${kotlin.version}</version>
                     </dependency>
                     <dependency>
                         <groupId>org.jetbrains.kotlin</groupId>
                         <artifactId>kotlin-maven-noarg</artifactId>
-                        <version>${version.kotlin}</version>
+                        <version>${kotlin.version}</version>
                     </dependency>
                 </dependencies>
                 <executions>
@@ -136,28 +137,37 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${version.springboot}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>${version.springboot}</version>
         </dependency>
 
         <!-- test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>${version.springboot}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>${version.junit}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
+            <version>3.0.0</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-client</artifactId>
+            <version>${version.jboss}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -173,7 +183,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-commons</artifactId>
-            <version>1.13.4.RELEASE</version>
+            <version>${version.springboot}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
