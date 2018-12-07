@@ -34,6 +34,3 @@ org.tsdes.advanced.rest.newsrestv2
     
 org.tsdes.advanced.examplenews
     NewsRepository (MovieRepository)
-    
-    C:\Users\Alex5\.m2\repository\org\springframework\data\spring-data-commons\1.13.4.RELEASE\spring-data-commons-1.13.4.RELEASE-sources.jar!\org\springframework\data\repository\CrudRepository.java
-    C:\Users\Alex5\.m2\repository\org\springframework\data\spring-data-commons\2.0.11.RELEASE\spring-data-commons-2.0.11.RELEASE-sources.jar!\org\springframework\data\repository\CrudRepository.java

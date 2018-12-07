@@ -1,4 +1,4 @@
-package movies
+package org.pg6100.movies
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -16,9 +16,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
  * Created by arcuri82 on 06-Jul-17.
  */
 
-@SpringBootApplication(scanBasePackages = ["movies"])
-@EnableJpaRepositories(basePackages = ["movies"])
-@EntityScan(basePackages = ["movies"])
+@SpringBootApplication(scanBasePackages = ["org.pg6100"])
+@EnableJpaRepositories(basePackages = ["org.pg6100"])
+@EntityScan(basePackages = ["org.pg6100.movies"])
 @EnableSwagger2
 class MovieApplication
 {
@@ -42,12 +42,7 @@ class MovieApplication
     }
 }
 
-/*
-    If you run this directly, you can then check the Swagger documentation at:
-    http://localhost:8080/newsrest/api/swagger-ui.html
- */
-
-    fun main(args: Array<String>)
-    {
-        SpringApplication.run(MovieApplication::class.java, *args)
-    }
+fun main(args: Array<String>)
+{
+    SpringApplication.run(MovieApplication::class.java, *args)
+}

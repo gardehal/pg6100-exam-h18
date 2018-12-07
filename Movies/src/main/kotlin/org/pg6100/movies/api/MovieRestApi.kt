@@ -1,4 +1,4 @@
-package movies.api
+package org.pg6100.movies.api
 
 import com.google.common.base.Throwables
 import io.swagger.annotations.*
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.*
 import javax.validation.ConstraintViolationException
 import javax.validation.Valid
 import org.springframework.web.util.UriComponentsBuilder
-import movies.MoviesRepository
-import movies.MoviesRepositoryInterface
-import movies.dto.MovieConverter
-import movies.dto.MovieDto
+import org.pg6100.movies.MoviesRepository
+import org.pg6100.movies.MoviesRepositoryInterface
+import org.pg6100.movies.dto.MovieConverter
+import org.pg6100.movies.dto.MovieDto
 import java.time.ZonedDateTime
 
 const val ID_PARAM = "The numeric id of the movie"

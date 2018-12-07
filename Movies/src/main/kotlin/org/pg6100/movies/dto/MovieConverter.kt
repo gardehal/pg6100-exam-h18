@@ -1,6 +1,6 @@
-package movies.dto
+package org.pg6100.movies.dto
 
-import movies.MovieEntity
+import org.pg6100.movies.MovieEntity
 
 class MovieConverter
 {

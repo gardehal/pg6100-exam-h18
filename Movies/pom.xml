@@ -6,8 +6,8 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>org.pg6100-exam-h18</groupId>
-        <artifactId>pg6100-exam-h18</artifactId>
+        <groupId>org.pg6100</groupId>
+        <artifactId>pg6100</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 

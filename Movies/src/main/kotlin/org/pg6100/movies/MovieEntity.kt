@@ -1,4 +1,4 @@
-package movies
+package org.pg6100.movies
 
 import java.time.ZonedDateTime
 import javax.persistence.*

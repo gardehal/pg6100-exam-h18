@@ -1,4 +1,4 @@
-package movies.dto
+package org.pg6100.movies.dto
 
 import io.swagger.annotations.ApiModelProperty
 import java.time.ZonedDateTime

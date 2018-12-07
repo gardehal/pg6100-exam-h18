@@ -2,11 +2,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.pg6100-exam-h18</groupId>
-    <artifactId>pg6100-exam-h18</artifactId>
+    <groupId>org.pg6100</groupId>
+    <artifactId>pg6100</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Root of pg6100-exam-h18</name>
+    <name>Root of pg6100 exam 18</name>
 
     <modules>
         <!--module>UserAuth</module>

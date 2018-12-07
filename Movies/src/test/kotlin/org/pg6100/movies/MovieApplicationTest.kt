@@ -1,8 +1,8 @@
-package movies
+package org.pg6100.movies
 
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
-import movies.dto.MovieDto
+import org.pg6100.movies.dto.MovieDto
 import org.hamcrest.CoreMatchers
 import org.junit.After
 import org.junit.Before
