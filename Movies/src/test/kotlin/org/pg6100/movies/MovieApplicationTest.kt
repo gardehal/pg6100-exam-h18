@@ -1,30 +1,24 @@
 package org.pg6100.movies
 
-import io.restassured.RestAssured
-import io.restassured.http.ContentType
-import org.pg6100.movies.dto.MovieDto
-import org.hamcrest.CoreMatchers
-import org.junit.After
-import org.junit.Before
-import org.junit.Test
-import org.junit.runner.RunWith
-import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.boot.web.server.LocalServerPort
-import org.springframework.test.context.junit4.SpringRunner
-
-@RunWith(SpringRunner::class)
-@SpringBootTest(classes = [(MovieApplication::class)],
-        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//import org.junit.Test
+//import org.junit.runner.RunWith
+//import org.springframework.boot.test.context.SpringBootTest
+//import org.springframework.boot.web.server.LocalServerPort
+//import org.springframework.test.context.junit4.SpringRunner
+//
+//@RunWith(SpringRunner::class)
+//@SpringBootTest(classes = [(MovieApplication::class)],
+//        webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class MovieApplicationTest
 {
-    @LocalServerPort
-    protected var port = 0
-
-    @Test
-    fun test()
-    {
-
-    }
+//    @LocalServerPort
+//    protected var port = 0
+//
+//    @Test
+//    fun test()
+//    {
+//
+//    }
 
 
 //    @Before
