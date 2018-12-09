@@ -4,22 +4,17 @@ import com.google.common.base.Throwables
 import io.swagger.annotations.*
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
-import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
-import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
 import javax.validation.ConstraintViolationException
-import javax.validation.Valid
-import org.springframework.web.util.UriComponentsBuilder
-import org.pg6100.movies.MoviesRepository
 import org.pg6100.movies.MoviesRepositoryInterface
 import org.pg6100.movies.dto.MovieConverter
 import org.pg6100.movies.dto.MovieDto
 import java.time.ZonedDateTime
 
 const val ID_PARAM = "The numeric id of the movie"
-const val MOVIES_JSON = "application/vnd.movies+json;charset=UTF-8;version=1"
+const val MOVIES_JSON = "application/vnd.pg6100.movies+json;charset=UTF-8;version=1"
 const val BASE_JSON = "application/json;charset=UTF-8"
 
 @Api(value = "/movies", description = "Handling of creating and retrieving movies")
@@ -39,7 +34,7 @@ class MovieRestApi
     @ApiOperation("Get all the movies")
     @GetMapping
     fun get(@ApiParam("The title of the movie")
-            @RequestParam("title", required = false)
+            @RequestParam("title")
             title: String?,
 
             @ApiParam("The name of the director")
@@ -85,7 +80,7 @@ class MovieRestApi
     @ApiOperation("Create a movie")
     @PostMapping(consumes = [MOVIES_JSON, BASE_JSON])
     @ApiResponse(code = 201, message = "The id of newly created movie")
-    fun createNews(
+    fun createMovie(
             @ApiParam("Title, director, category, screeningFromTime, screeningToTime of movie")
             @RequestBody
             dto: MovieDto)
@@ -125,7 +120,7 @@ class MovieRestApi
 
     @ApiOperation("Get a single movie specified by id")
     @GetMapping(path = ["/{id}"])
-    fun getNews(@ApiParam(ID_PARAM)
+    fun getMovie(@ApiParam(ID_PARAM)
                 @PathVariable("id")
                 pathId: String?)
             : ResponseEntity<MovieDto>
@@ -148,7 +143,7 @@ class MovieRestApi
 
     @ApiOperation("Update an existing movie entry")
     @PutMapping(path = ["/{id}"], consumes = [(MediaType.APPLICATION_JSON_VALUE)])
-    fun update(
+    fun updateMovie(
             @ApiParam(ID_PARAM)
             @PathVariable("id")
             pathId: String?,
@@ -208,7 +203,7 @@ class MovieRestApi
 
     @ApiOperation("Update the title content of an existing movie")
     @PutMapping(path = ["/{id}/title"], consumes = [(MediaType.TEXT_PLAIN_VALUE)])
-    fun updateText(
+    fun updateTitle(
             @ApiParam(ID_PARAM)
             @PathVariable("id")
             id: Long?,
@@ -245,7 +240,7 @@ class MovieRestApi
 
     @ApiOperation("Delete a movie with the given id")
     @DeleteMapping(path = ["/{id}"])
-    fun delete(@ApiParam(ID_PARAM)
+    fun deleteMovie(@ApiParam(ID_PARAM)
                @PathVariable("id")
                pathId: String?): ResponseEntity<Any>
     {

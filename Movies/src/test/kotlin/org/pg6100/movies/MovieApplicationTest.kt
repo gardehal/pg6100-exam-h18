@@ -20,6 +20,13 @@ class MovieApplicationTest
     @LocalServerPort
     protected var port = 0
 
+    @Test
+    fun test()
+    {
+
+    }
+
+
 //    @Before
 //    @After
 //    fun clean()

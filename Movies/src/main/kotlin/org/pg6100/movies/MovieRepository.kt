@@ -31,7 +31,7 @@ interface MoviesRepositoryCustom {
 
 @Repository
 @Transactional
-class MoviesRepository: MoviesRepositoryCustom
+class MoviesRepositoryImpl: MoviesRepositoryCustom
 {
     @Autowired
     private lateinit var em: EntityManager
@@ -46,8 +46,8 @@ class MoviesRepository: MoviesRepositoryCustom
 
     override fun updateTitle(movieId: Long, title: String): Boolean
     {
-        val news = em.find(MovieEntity::class.java, movieId) ?: return false
-        news.title = title
+        val movie = em.find(MovieEntity::class.java, movieId) ?: return false
+        movie.title = title
         return true
     }
 
