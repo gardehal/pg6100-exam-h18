@@ -152,7 +152,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <finalName>moviesRest</finalName>
+                    <finalName>movies</finalName>
                 </configuration>
             </plugin>
 

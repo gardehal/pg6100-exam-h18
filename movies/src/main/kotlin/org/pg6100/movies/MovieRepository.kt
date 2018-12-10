@@ -8,7 +8,7 @@ import java.time.ZonedDateTime
 import javax.persistence.EntityManager
 
 @Repository
-interface MoviesRepositoryInterface : CrudRepository<MovieEntity, Long>, MoviesRepositoryCustom
+interface MoviesRepository : CrudRepository<MovieEntity, Long>, MoviesRepositoryCustom
 {
     fun findAllByTitle(title: String): Iterable<MovieEntity>
 

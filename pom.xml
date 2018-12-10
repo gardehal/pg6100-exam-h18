@@ -11,7 +11,7 @@
     <modules>
         <!--module>UserAuth</module>
         <module>UserDetails</module-->
-        <module>Movies</module>
+        <module>movies</module>
     </modules>
 
     <!--

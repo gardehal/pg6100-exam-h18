@@ -2,13 +2,13 @@ package org.pg6100.movies.api
 
 import com.google.common.base.Throwables
 import io.swagger.annotations.*
+import org.pg6100.movies.MoviesRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.validation.ConstraintViolationException
-import org.pg6100.movies.MoviesRepositoryInterface
 import org.pg6100.movies.dto.MovieConverter
 import org.pg6100.movies.dto.MovieDto
 import java.time.ZonedDateTime
@@ -26,15 +26,12 @@ const val BASE_JSON = "application/json;charset=UTF-8"
 class MovieRestApi
 {
     @Autowired
-    private lateinit var crud: MoviesRepositoryInterface
-
-    @Value("\${server.servlet.context-path}")
-    private lateinit var contextPath : String
+    private lateinit var crud: MoviesRepository
 
     @ApiOperation("Get all the movies")
     @GetMapping
     fun get(@ApiParam("The title of the movie")
-            @RequestParam("title")
+            @RequestParam("title", required = false)
             title: String?,
 
             @ApiParam("The name of the director")
@@ -147,6 +144,7 @@ class MovieRestApi
             @ApiParam(ID_PARAM)
             @PathVariable("id")
             pathId: String?,
+            //
             @ApiParam("The movie that will replace the old one. Cannot change its id though.")
             @RequestBody
             dto: MovieDto
@@ -207,6 +205,7 @@ class MovieRestApi
             @ApiParam(ID_PARAM)
             @PathVariable("id")
             id: Long?,
+            //
             @ApiParam("The new text which will replace the old one")
             @RequestBody
             title: String

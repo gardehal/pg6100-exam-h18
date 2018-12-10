@@ -16,9 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
  * Created by arcuri82 on 06-Jul-17.
  */
 
-@SpringBootApplication(scanBasePackages = ["org.pg6100"])
-@EnableJpaRepositories(basePackages = ["org.pg6100"])
-@EntityScan(basePackages = ["org.pg6100"])
+@SpringBootApplication
 @EnableSwagger2
 class MovieApplication
 {
