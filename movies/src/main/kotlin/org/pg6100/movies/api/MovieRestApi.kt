@@ -31,23 +31,23 @@ class MovieRestApi
     @ApiOperation("Get all the movies")
     @GetMapping
     fun get(@ApiParam("The title of the movie")
-            @RequestParam("title", required = false)
+            @RequestParam("title")
             title: String?,
 
             @ApiParam("The name of the director")
-            @RequestParam("director", required = false)
+            @RequestParam("director")
             director: String?,
 
             @ApiParam("The category")
-            @RequestParam("category", required = false)
+            @RequestParam("category")
             category: String?,
 
             @ApiParam("The start of the screening")
-            @RequestParam("screeningFromTime", required = false)
+            @RequestParam("screeningFromTime")
             screeningFromTime: ZonedDateTime?,
 
             @ApiParam("The end of the screening")
-            @RequestParam("screeningToTime", required = false)
+            @RequestParam("screeningToTime")
             screeningToTime: ZonedDateTime?
 
     ): ResponseEntity<List<MovieDto>>

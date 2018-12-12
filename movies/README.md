@@ -6,12 +6,6 @@
 
 [ References ](#References)
 
-TODO
-- tests?
-- frontend
-- synch with other apis
-- shared api
-
 <a name="Reflection"></a>
 ## Reflection
 
@@ -105,6 +99,45 @@ Caused by: java.lang.NullPointerException: null
 
 Process finished with exit code 1
 ```
+
+With barely any progress since the 7th of december, it being the 12th as I write this, I see no way to finish
+my own module before the deadline. I've talked to the other group members and they seem to struggle as well.
+I will therefore write about what I believe is wrong, what I did to try to fix it, what I want to do or could do
+(but don't necessarily have time for), and what the development would be further down the line.
+
+#### What went wrong
+
+I've already said I'm not entirely sure what went wrong, which is why I specifically said "believe" in the paragraph above.
+Looking at the stack, it seems that there are 2 errors, one of them causing two exceptions. The first is a
+IllegalStateException, caused by something in the Spring framework, which is called by the MovieApplication. 
+This could mean several things, either that the project does not pick up an external resource (like a dependency),
+or it could be a missing setting somewhere.
+I did model the project after the modules found in [ References ](#References) with the same resources and dependencies.
+
+The second error seems to be caused by a Nullpointer which later turn into an error creating a bean.
+I would assume this is due to inexperience with Kotlin, or possibly the DTOs fields.
+
+#### What was done to fix it
+
+When encountering the problems the first time the first thing I did was to read the stacktrace which didn't make
+much sense initially. Then I took to the internet for heal, searching for a mix of keywords and lines from the stacktrace.
+I did find a few people with similar problems, but no one with a similar system. After trying all suggested
+solutions I went though the documentation of the third party dependencies. 
+Earlier in the project I found that one of my dependencies was outdated and cached so it wouldn't update.
+Deleting the dependency from my computer and re-downloading the new version worked, so I tried this with all dependencies.
+Unfortunately this didn't work for the problems in the stacktrace.
+Combining this with trying different versions of the dependencies, invalidating chances, restarting IntelliJ, and
+refreshing and updating Maven did not do anything.
+
+It even went so far I tried ripping out all the code except the minimum required code to run the project, adding code
+function by function (when I could) to see where the issue was. This did not give any more insight either, 
+with all the problems heaping on when adding Spring components back.
+
+#### What could I do
+
+
+
+#### Future actions and further development
 
 <a name="References"></a>
 ## References
