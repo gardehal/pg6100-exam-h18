@@ -112,7 +112,7 @@ Looking at the stack, it seems that there are 2 errors, one of them causing two 
 IllegalStateException, caused by something in the Spring framework, which is called by the MovieApplication. 
 This could mean several things, either that the project does not pick up an external resource (like a dependency),
 or it could be a missing setting somewhere.
-I did model the project after the modules found in [ References ](#References) with the same resources and dependencies.
+I did model the project after the modules found in [ references ](#References) with the same resources and dependencies.
 
 The second error seems to be caused by a Nullpointer which later turn into an error creating a bean.
 I would assume this is due to inexperience with Kotlin, or possibly the DTOs fields.
@@ -135,18 +135,39 @@ with all the problems heaping on when adding Spring components back.
 
 #### What could I do
 
-
+I have not tried rebuilding the project from scratch, as in deleting everything in my module, even the entire project, 
+then adding code piece by piece. I did not consult the other group members about my problems, though we compared errors 
+to see if there was a common element. Since the whole group is struggling with errors it was almost pointless to unload 
+more problems.
 
 #### Future actions and further development
+
+Keep in mind this is a high level view of what would happen after the errors above were resolved. There would be error and I
+don't take this into account.
+
+Assuming I managed to fix the errors, next up would be to either make a HTML page and test the API manually correcting 
+any mistakes I encountered, or make unit tests. I would prioritize HTML since it's specified that it's part of the 
+assignment, while tests would be extra credits.
+We discussed how we would do HTML in the group and came to the conclusion that it would be best to do the same thing as
+was shown class, mostly in PG6300, where dynamic HTML was rendered with a method. By doing this we could draw on experience
+from PG6300 courses/repository and exam, in addition to PG6100. I do believe the code would have to be altered a bit
+to make it work.
+
+Working out the issues and getting my API up and running, I would've coordinated with the rest of the group, discussing
+what endpoints we used, standardizing and linking up the APIs to each other. Then we would have to repeat the process 
+for the shared API and make the HTML for it and the homepage. Finally I would add tests, and other extra features.
 
 <a name="References"></a>
 ## References
 
+TODO update
+
 Used code from following files in PG6100 repository:
+
 org.tsdes.advanced.rest.newsrestv2
-    api - NewsRestApi (MovieRestApi)
-    dto - NewsConverter, NewsDto (MovieConverter, MovieDto)
-    NewsRestApplication (MovieRepository)
+- api - NewsRestApi (MovieRestApi)
+- dto - NewsConverter, NewsDto (MovieConverter, MovieDto)
+- NewsRestApplication (MovieRepository)
     
 org.tsdes.advanced.examplenews
-    NewsRepository (MovieRepository)
+- NewsRepository (MovieRepository)
