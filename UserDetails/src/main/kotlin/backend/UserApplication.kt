@@ -12,6 +12,7 @@ import springfox.documentation.spi.DocumentationType
 import springfox.documentation.spring.web.plugins.Docket
 import springfox.documentation.swagger2.annotations.EnableSwagger2
 
+@Suppress("DEPRECATION")
 @SpringBootApplication(scanBasePackages = ["backend"])
 @EnableJpaRepositories(basePackages = ["backend"])
 @EntityScan(basePackages = ["backend"])
@@ -40,8 +41,8 @@ open class UserApplication {
     If you run this directly, you can then check the Swagger documentation at:
 
     http://localhost:8080/userrest/api/swagger-ui.html
-
  */
+
 fun main(args: Array<String>) {
     SpringApplication.run(UserApplication::class.java, *args)
 }

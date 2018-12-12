@@ -1,17 +1,23 @@
 package backend.db
 
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.data.repository.CrudRepository
+import org.springframework.stereotype.Component
 import org.springframework.stereotype.Repository
 import org.springframework.transaction.annotation.Transactional
+import javax.persistence.EntityManager
+import backend.db.User
 
 @Repository
+@Component("UserRepository")
 interface UserRepository : CrudRepository<User, Long>, UserRepositoryCustom {
 
     fun findAllByUsername(username: String): Iterable<User>
 
     fun findAllByMail(mail: String): Iterable<User>
 
-    fun findAllByAdress(address: String): Iterable<User>
+    fun findAllByAddress(address: String): Iterable<User>
 
 }
 
@@ -28,10 +34,10 @@ interface UserRepositoryCustom {
                address: String): Boolean
 }
 
-/*
 @Repository
 @Transactional
-open class UserRepositoryImpl : UserRepositoryCustom {
+@Qualifier("UserRepository")
+     open class UserRepositoryImpl : UserRepositoryCustom {
 
     @Autowired
     private lateinit var em: EntityManager
@@ -59,4 +65,3 @@ open class UserRepositoryImpl : UserRepositoryCustom {
         return true
     }
 }
-        */

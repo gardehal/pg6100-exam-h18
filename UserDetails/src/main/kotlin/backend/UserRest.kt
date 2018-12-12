@@ -20,7 +20,7 @@ const val USER_JSON = "application/vnd.user+json;charset=UTF-8;version=2"
 
 @Api(value = "/user", description = "Handling of creating and retrieving user")
 @RequestMapping(
-        path = ["/user"], // when the url is "<base>/user", then this class will be used to handle it
+        path = ["/user"],
         produces = [USER_JSON, BASE_JSON]
 )
 @RestController
@@ -55,7 +55,7 @@ class UserRest {
         } else if (!mail.isNullOrBlank()) {
             crud.findAllByMail(mail!!)
         } else {
-            crud.findAllByAdress(address!!)
+            crud.findAllByAddress(address!!)
         }
 
         return ResponseEntity.ok(DtoConverter.transform(list))
