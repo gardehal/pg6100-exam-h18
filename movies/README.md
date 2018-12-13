@@ -160,8 +160,6 @@ for the shared API and make the HTML for it and the homepage. Finally I would ad
 <a name="References"></a>
 ## References
 
-TODO update
-
 Used code from following files in PG6100 repository:
 
 org.tsdes.advanced.rest.newsrestv2
@@ -171,3 +169,7 @@ org.tsdes.advanced.rest.newsrestv2
     
 org.tsdes.advanced.examplenews
 - NewsRepository (MovieRepository)
+- MovieEntity (NewsEntity)
+
+org.tsdes.advanced.frontend.spa-rest.spa-rest-frontend
+- frontend (public)
