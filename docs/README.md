@@ -3,19 +3,20 @@
 
 Exam repository for Enterprise2 ( <a href="https://github.com/arcuri82/testing_security_development_enterprise_systems">PG6100</a> ) Fall 2018 by:
 
-Margrethe Thorsen ( <a href="https://github.com/kaffegrut">kaffegrut</a> )
+Candidate number 
 
-Eirik Holmedal ( <a href="https://github.com/"></a> )
+Candidate number 700041
 
-Alexander T. Gärdehall ( <a href="https://github.com/grdall">grdall</a> )
+Candidate number 700047
+
 
 <hr>
 
-[ User Authentication Documentation ](/UserAuth/README.md) - Eirik
+[ User Authentication Documentation ](/UserAuth/README.md) - 
 
-[ User Details Documentation ](/UserDetails/README.md) - Margrethe 
+[ User Details Documentation ](/UserDetails/README.md) - 700041
 
-[ Movies Documentation ](/Movies/README.md) - Alexander
+[ Movies Documentation ](/Movies/README.md) - 700047
 
 [ Booking Documentation ](/UserDetails/README.md) - All members
 
