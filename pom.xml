@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.pg6100</groupId>
+    <artifactId>pg6100</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Root of pg6100 exam 18</name>
+
+    <modules>
+        <!--module>UserAuth</module>
+        <module>UserDetails</module-->
+        <module>movies</module>
+    </modules>
+
+    <!--
+        Maven phases:
+        https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#Lifecycle_Reference
+
+        Main ones:
+
+        *clean*
+        compile
+        process-test-classes
+        test
+        package
+        pre-integration-test
+        integration-test
+        post-integration-test
+        verify
+        install
+        deploy
+
+        apart from *clean*, when executing one of those phases (eg "mvn test"), all previous
+        phases are executed as well.
+
+        clean: delete everything in the "target" folders
+    -->
+
+
+    <properties>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+    <profiles>
+    </profiles>
+
+
+    <build>
+        <pluginManagement>
+            <plugins>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
