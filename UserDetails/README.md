@@ -18,17 +18,17 @@ solution to. My main goal throughout the exam has been to mainly solve this prob
 i continually changed my code, and ended up with the project still not working. I could see what was the problem, and where the problem
 where, but not how to fix it.
 
-###Problems and errors
+### Problems and errors
 The main problem with this project was that I knew that there might not necessarily be any error with the code, but rather with
 some of the projects configurations or how i set up the project to run, this is because of the class project pg6100, worked as it should.
 
-###Where to go from here
+### Where to go from here
 I think that from here, if i would continue, I would focus on the basics, to fully get an overview, so that I could get the project
 to build. I would maybe have cooperated more with my group members and wrote the project from start again. Regardless, i think that
 without the errors that occurred, and with the right configurations, that the project would have run. And had we gotten there,
 we could have started working on the common task in the exam.
 
-###Code from pg6100 repository
+### Code from pg6100 repository
 As i mentioned, i used code from the pg6100 repository from class, this includes;
 
 * **advanced/frontend/sparest/spa-rest-backend**
