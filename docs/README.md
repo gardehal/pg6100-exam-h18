@@ -3,7 +3,7 @@
 
 Exam repository for Enterprise2 ( <a href="https://github.com/arcuri82/testing_security_development_enterprise_systems">PG6100</a> ) Fall 2018 by:
 
-Candidate number 
+Candidate number 700031 
 
 Candidate number 700041
 
@@ -12,7 +12,7 @@ Candidate number 700047
 
 <hr>
 
-[ User Authentication Documentation ](/UserAuth/README.md) - 
+[ User Authentication Documentation ](/UserAuth/README.md) - 700031 
 
 [ User Details Documentation ](/UserDetails/README.md) - 700041
 
