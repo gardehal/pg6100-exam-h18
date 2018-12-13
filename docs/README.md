@@ -11,17 +11,23 @@ Alexander T. Gärdehall ( <a href="https://github.com/grdall">grdall</a> )
 
 <hr>
 
-[ User Authentication Documentation ](/UserAuth/README.md)
+[ User Authentication Documentation ](/UserAuth/README.md) - Eirik
 
-[ User Details Documentation ](/UserDetails/README.md)
+[ User Details Documentation ](/UserDetails/README.md) - Margrethe 
 
-[ Movies Documentation ](/Movies/README.md)
+[ Movies Documentation ](/Movies/README.md) - Alexander
 
-[ Booking Documentation ](/UserDetails/README.md)
+[ Booking Documentation ](/UserDetails/README.md) - All members
 
-[ common Doumentation ](#common)
+[ Common Documentation ](#common-documentation)
 
 <a name="common"></a>
-## common
+## Common Documentation
 
-sometext
+Since no members finished their API, we did not progress to make a common/shared API. Therefore there is no documentation 
+concerning this. The detail of each members API should be in their respective module.
+
+Due to other exams and individual problems we did not meet much other than in and after class. Once the assignment was given, 
+we met to delegate API and discuss high level view strategy and use of Git. We also chose to merge our branches into the master
+branch, even though we did not finish the task which was the reason to create a branch. We did this because it would be easier for 
+the examinators to review the project without jumping to each branch.
