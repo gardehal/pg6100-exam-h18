@@ -3,7 +3,7 @@
 
 Exam repository for Enterprise2 ( <a href="https://github.com/arcuri82/testing_security_development_enterprise_systems">PG6100</a> ) Fall 2018 by:
 
-Margrethe Thorsen ( <a href="https://github.com/"></a> )
+Margrethe Thorsen ( <a href="https://github.com/kaffegrut">kaffegrut</a> )
 
 Eirik Holmedal ( <a href="https://github.com/"></a> )
 
