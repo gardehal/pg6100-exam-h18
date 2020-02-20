@@ -18,7 +18,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2
 
 @SpringBootApplication
 @EnableSwagger2
-class MovieApplication
+class LocalApplicationRunner
 {
     @Bean
     fun swaggerApi(): Docket
@@ -42,5 +42,5 @@ class MovieApplication
 
 fun main(args: Array<String>)
 {
-    SpringApplication.run(MovieApplication::class.java, *args)
+    SpringApplication.run(LocalApplicationRunner::class.java, *args)
 }
